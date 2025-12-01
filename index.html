@@ -3,7 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soarinho - Desenvolvimento Web</title>
+    <title>Desenvolvimento Web | Soarinho - Sites, Sistemas e Aplicações Web</title>
+    <meta name="description" content="Desenvolvimento Web profissional. Criação de sites, blogs, sistemas e aplicações web responsivas. Especialista em Front-end, HTML5, CSS3, JavaScript, PHP e Laravel.">
+    <meta name="keywords" content="desenvolvimento web, criação de sites, programador web, desenvolvedor front-end, HTML5, CSS3, JavaScript, PHP, Laravel, sites responsivos, Angra dos Reis">
+    <meta name="author" content="Lucas Soares dos Santos - Soarinho">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://web.soarinho.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://web.soarinho.com">
+    <meta property="og:title" content="Desenvolvimento Web | Soarinho - Sites, Sistemas e Aplicações Web">
+    <meta property="og:description" content="Desenvolvimento Web profissional. Criação de sites, blogs, sistemas e aplicações web responsivas.">
+    <meta property="og:image" content="https://soarinho.com/identity/marca-soarinho.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://web.soarinho.com">
+    <meta property="twitter:title" content="Desenvolvimento Web | Soarinho">
+    <meta property="twitter:description" content="Desenvolvimento Web profissional. Criação de sites, blogs, sistemas e aplicações web responsivas.">
+    <meta property="twitter:image" content="https://soarinho.com/identity/marca-soarinho.png">
+    
     <link rel="icon" type="image/png" href="https://soarinho.com/identity/marca-soarinho.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -350,8 +370,8 @@
     <nav class="fixed top-0 left-0 w-full z-50 glass-effect py-4 transition-all duration-300 border-b border-dark-800" style="background: rgba(20, 20, 20, 0.85); backdrop-filter: blur(20px);">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center">
-                <a href="#hero" class="flex items-center hover:scale-105 transition-transform duration-300">
-                    <img src="https://soarinho.com/identity/logo-soarinho.png" alt="Soarinho" class="h-16 md:h-24 lg:h-28 w-auto">
+                <a href="#hero" class="flex items-center hover:scale-105 transition-transform duration-300" aria-label="Soarinho Desenvolvimento Web - Página Inicial">
+                    <img src="https://soarinho.com/identity/logo-soarinho.png" alt="Soarinho - Desenvolvimento Web" class="h-16 md:h-24 lg:h-28 w-auto">
                 </a>
                 <button id="mobile-menu-btn" class="md:hidden text-white">
                     <i class="fas fa-bars text-xl"></i>
@@ -394,7 +414,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center relative overflow-hidden hero-gradient tech-grid">
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden hero-gradient tech-grid" itemscope itemtype="https://schema.org/ProfessionalService">
         <!-- Programming Elements Background -->
         <div class="absolute inset-0 pointer-events-none z-0 opacity-20">
             <div class="absolute top-20 left-10 text-code-blue font-tech text-sm animate-float" style="animation-delay: 0s;">&lt;div&gt;</div>
@@ -417,7 +437,7 @@
                     
                     <div class="flex items-center justify-center gap-4 mb-6 md:mb-8">
                         <img src="https://soarinho.com/identity/marca-soarinho.png" alt="Marca Soarinho" class="h-28 md:h-40 lg:h-48 w-auto opacity-80 animate-float">
-                        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white hero-title">
+                        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white hero-title" itemprop="name">
                             &lt;SOARINHO/&gt;
                         </h1>
                     </div>
@@ -774,15 +794,6 @@
                 <div>
                     <div class="elfsight-app-c85a5979-e427-4d08-9d3a-647b2e14c648" data-elfsight-app-lazy></div>
                 </div>
-                
-                <!-- Link para ver mais depoimentos -->
-                <div class="text-center mt-12 reveal">
-                    <a href="https://share.google/tKvgYwdlS9tb5WQ2N" target="_blank" class="inline-block cyber-border px-8 py-4 bg-white text-dark-900 font-bold text-base md:text-lg uppercase tracking-wider transition-all duration-300 hover:bg-gray-100 hover:shadow-lg text-center">
-                        <i class="fab fa-google mr-2"></i>
-                        Ver todos os depoimentos no Google
-                        <i class="fas fa-external-link-alt ml-2"></i>
-                    </a>
-                </div>
             </div>
         </div>
     </section>
@@ -864,6 +875,32 @@
             </div>
         </div>
     </footer>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Soarinho - Desenvolvimento Web",
+        "description": "Desenvolvimento Web profissional. Criação de sites, blogs, sistemas e aplicações web responsivas.",
+        "url": "https://web.soarinho.com",
+        "serviceType": "Desenvolvimento Web",
+        "areaServed": "BR",
+        "provider": {
+            "@type": "Person",
+            "name": "Lucas Soares dos Santos",
+            "alternateName": "Soarinho"
+        },
+        "offers": {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "Desenvolvimento Web",
+                "description": "Criação de sites, blogs, sistemas e aplicações web responsivas"
+            }
+        }
+    }
+    </script>
 
     <script>
         // Custom Cursor
