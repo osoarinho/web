@@ -1,6 +1,6 @@
-# Soarinho Web
+# Soarinho
 
-Site do serviço de desenvolvimento web.
+Site do serviço de Desenvolvimento Web.
 
 ## 🌐 Acesso
 
