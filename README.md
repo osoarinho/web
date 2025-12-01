@@ -1,6 +1,6 @@
 # Desenvolvimento Web
 
-Site do serviço de Desenvolvimento Web.
+Site do serviço de Desenvolvimento Web oferecido por Soarinho.
 
 ## 🌐 Acesso
 
