@@ -8,7 +8,7 @@ Site do serviço de Desenvolvimento Web oferecido por Soarinho.
 
 ## 🎯 Sobre
 
-Serviço de desenvolvimento web front-end:
+Serviço de desenvolvimento web:
 - Criação de sites
 - Blogs
 - Landing pages
