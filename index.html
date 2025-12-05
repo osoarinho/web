@@ -126,7 +126,7 @@
         
         body {
             font-family: 'JetBrains Mono', monospace;
-            cursor: none;
+            cursor: auto;
         }
         
         .custom-cursor {
@@ -139,6 +139,7 @@
             z-index: 9999;
             mix-blend-mode: difference;
             transition: transform 0.1s ease;
+            display: none;
         }
         
         .cursor-dot {
@@ -150,6 +151,7 @@
             pointer-events: none;
             z-index: 9999;
             mix-blend-mode: difference;
+            display: none;
         }
         
         .hero-gradient {
