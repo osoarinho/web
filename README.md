@@ -1,6 +1,6 @@
-# Soarinho Web
+# Desenvolvimento Web
 
-Site do serviço de desenvolvimento web.
+Site do serviço de Desenvolvimento Web oferecido por Soarinho.
 
 ## 🌐 Acesso
 
@@ -8,7 +8,7 @@ Site do serviço de desenvolvimento web.
 
 ## 🎯 Sobre
 
-Serviço de desenvolvimento web front-end:
+Serviço de desenvolvimento web:
 - Criação de sites
 - Blogs
 - Landing pages
