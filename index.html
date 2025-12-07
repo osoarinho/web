@@ -170,8 +170,13 @@
         }
         
         body.light-theme .glass-effect {
-            background: rgba(255, 255, 255, 0.95);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.95) !important;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+        }
+        
+        body.light-theme nav[style*="background"] {
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(20px) !important;
         }
         
         body.light-theme .card-effect {
@@ -291,6 +296,62 @@
         body.light-theme .hero-gradient .text-code-purple,
         body.light-theme .hero-gradient .text-code-orange {
             color: rgba(0, 0, 0, 0.3) !important;
+        }
+        
+        /* Cyber Border Light Theme */
+        body.light-theme .cyber-border {
+            border: 1px solid rgba(0, 0, 0, 0.2) !important;
+            background: rgba(250, 250, 250, 0.9) !important;
+        }
+        
+        body.light-theme .cyber-border::before {
+            background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.3), transparent) !important;
+        }
+        
+        /* Tech Grid Light Theme */
+        body.light-theme .tech-grid {
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px) !important;
+        }
+        
+        /* Stat Card Light Theme */
+        body.light-theme .stat-card {
+            background: rgba(250, 250, 250, 0.9) !important;
+        }
+        
+        body.light-theme .stat-number {
+            background: linear-gradient(135deg, #0a0a0a, #404040) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+        }
+        
+        /* Hero Title Light Theme */
+        body.light-theme .hero-title {
+            color: #0a0a0a !important;
+        }
+        
+        /* WhatsApp Button Light Theme */
+        body.light-theme .whatsapp-button {
+            background: rgba(255, 255, 255, 0.95) !important;
+            border: 1px solid rgba(0, 0, 0, 0.2) !important;
+            color: #0a0a0a !important;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+        }
+        
+        body.light-theme .whatsapp-button:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+        }
+        
+        /* Interactive Card Light Theme */
+        body.light-theme .interactive-card:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+        }
+        
+        /* Matrix Background Light Theme */
+        body.light-theme .matrix-char {
+            color: rgba(0, 0, 0, 0.3) !important;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
         }
         
         .custom-cursor {
