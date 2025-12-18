@@ -638,8 +638,24 @@
         
         /* Tech Stack Infinite Scroll */
         .tech-scroll-container {
-            animation: scroll-infinite 12s linear infinite;
+            display: flex;
+            width: max-content;
+            gap: 0;
+            animation: scroll-infinite 25s linear infinite;
             will-change: transform;
+        }
+        
+        .tech-scroll-content {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .tech-scroll-content {
+                gap: 3rem;
+            }
         }
         
         @keyframes scroll-infinite {
@@ -647,7 +663,7 @@
                 transform: translateX(0);
             }
             100% {
-                transform: translateX(-50%);
+                transform: translateX(calc(-100% / 2));
             }
         }
         
@@ -777,7 +793,7 @@
 
     <!-- Hero Section -->
     <main>
-        <section class="min-h-screen flex items-center justify-center relative overflow-hidden hero-gradient tech-grid" itemscope itemtype="https://schema.org/ProfessionalService">
+        <section class="min-h-[100vh] md:min-h-screen flex items-center justify-center relative overflow-hidden hero-gradient tech-grid pt-14 md:pt-20 pb-20 md:pb-0" itemscope itemtype="https://schema.org/ProfessionalService">
         <!-- Programming Elements Background -->
         <div class="absolute inset-0 pointer-events-none z-0 opacity-20">
             <div class="absolute top-20 left-10 text-code-blue font-tech text-sm animate-float" style="animation-delay: 0s;">&lt;div&gt;</div>
@@ -791,24 +807,24 @@
         </div>
         <div class="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
             <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-12 md:mb-16">
-                    <div class="flex items-center justify-center mb-6 md:mb-8">
+                <div class="text-center mb-4 md:mb-16">
+                    <div class="flex items-center justify-center mb-3 md:mb-8">
                         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white hero-title flex items-center justify-center gap-1 md:gap-2" itemprop="name">
-                            <img src="https://soarinho.com/identity/marca-soarinho.png" alt="Marca Soarinho" class="h-32 md:h-48 lg:h-64 w-auto opacity-90 animate-float">
+                            <img src="https://soarinho.com/portraits/IMG-20251201-WA0031.jpg" alt="Soarinho - Desenvolvedor Web" class="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-2xl md:rounded-3xl object-cover object-center shadow-2xl border-2 border-white/20 opacity-95 animate-float" onerror="this.onerror=null; this.src='https://soarinho.com/identity/marca-soarinho.png';">
                         </h1>
                     </div>
                     
-                    <div class="inline-block mb-6 md:mb-8 mt-4 md:mt-6">
-                        <div class="cyber-border px-6 py-3 md:px-8 md:py-4 rounded-lg mb-4 md:mb-6 inline-block">
-                            <span class="text-white font-bold text-base md:text-lg tracking-widest animate-glow">DESENVOLVEDOR WEB</span>
+                    <div class="inline-block mb-2 md:mb-8 mt-2 md:mt-6">
+                        <div class="cyber-border px-4 py-2 md:px-8 md:py-4 rounded-lg mb-2 md:mb-6 inline-block">
+                            <span class="text-white font-bold text-xs md:text-lg tracking-widest animate-glow">DESENVOLVEDOR WEB</span>
                         </div>
                     </div>
                     
                     <div class="max-w-2xl md:max-w-3xl mx-auto">
-                        <div class="text-xl md:text-2xl text-gray-300 font-light mb-2 text-center">
+                        <div class="text-base md:text-2xl text-gray-300 font-light mb-1 md:mb-2 text-center">
                             Transformando ideias em experiências digitais
                         </div>
-                        <p class="text-lg md:text-xl text-gray-400 mb-8 md:mb-12 leading-relaxed">
+                        <p class="text-sm md:text-xl text-gray-400 mb-3 md:mb-12 leading-relaxed">
                             Especialista em <span class="text-white font-semibold">desenvolvimento web front-end</span>, 
                             <span class="text-white font-semibold">criação de sites, blogs</span> e 
                             <span class="text-white font-semibold">sistemas modernos</span>
@@ -816,23 +832,23 @@
                     </div>
                     
                     <!-- Interactive Stats -->
-                    <div class="grid grid-cols-2 gap-4 md:gap-8 mb-8 md:mb-12 max-w-xl mx-auto">
-                        <div class="stat-card cyber-border p-4 rounded-lg text-center">
-                            <div class="stat-number" data-target="4">0</div>
-                            <div class="text-gray-400 text-sm">Anos Exp</div>
+                    <div class="grid grid-cols-2 gap-2 md:gap-8 mb-3 md:mb-12 max-w-xl mx-auto">
+                        <div class="stat-card cyber-border p-2 md:p-4 rounded-lg text-center">
+                            <div class="stat-number text-lg md:text-2xl" data-target="4">0</div>
+                            <div class="text-gray-400 text-xs md:text-sm">Anos Exp</div>
                         </div>
-                        <div class="stat-card cyber-border p-4 rounded-lg text-center">
-                            <div class="stat-number" data-target="5">0</div>
-                            <div class="text-gray-400 text-sm">+ Tecnologias</div>
+                        <div class="stat-card cyber-border p-2 md:p-4 rounded-lg text-center">
+                            <div class="stat-number text-lg md:text-2xl" data-target="5">0</div>
+                            <div class="text-gray-400 text-xs md:text-sm">+ Tecnologias</div>
                         </div>
                     </div>
                     
-                    <div class="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center">
-                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-white text-dark-900 font-bold text-base md:text-lg uppercase tracking-wider transition-all duration-300 hover:bg-gray-100 hover:shadow-lg text-center animate-pulse-glow">
+                    <div class="flex flex-col sm:flex-row gap-2 md:gap-6 justify-center items-center mb-2 md:mb-0">
+                        <a href="#contact" class="w-full sm:w-auto px-6 py-2 md:px-8 md:py-4 bg-white text-dark-900 font-bold text-sm md:text-lg uppercase tracking-wider transition-all duration-300 hover:bg-gray-100 hover:shadow-lg text-center animate-pulse-glow">
                             Iniciar Projeto
                         </a>
                         
-                        <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 bg-transparent border-2 border-white text-white font-bold text-base md:text-lg uppercase tracking-wider transition-all duration-300 hover:bg-white hover:text-dark-900 flex items-center justify-center gap-2">
+                        <a href="#portfolio" class="w-full sm:w-auto px-6 py-2 md:px-8 md:py-4 bg-transparent border-2 border-white text-white font-bold text-sm md:text-lg uppercase tracking-wider transition-all duration-300 hover:bg-white hover:text-dark-900 flex items-center justify-center gap-2">
                             <span>Ver Portfólio</span>
                             <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform duration-300"></i>
                         </a>
@@ -842,28 +858,28 @@
         </div>
         
         <!-- Tech Stack Scroll -->
-        <div class="absolute bottom-0 left-0 w-full bg-dark-900/40 py-4">
-            <div class="overflow-hidden">
-                <div class="tech-scroll-container flex whitespace-nowrap">
-                    <div class="tech-scroll-content flex space-x-8 md:space-x-12 px-8">
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">HTML</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">CSS</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">BOOTSTRAP</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">ELEMENTOR + WORDPRESS</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">JAVASCRIPT</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">LARAVEL PHP</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">SQL</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">LINUX</span>
+        <div class="absolute bottom-0 left-0 w-full bg-dark-900/40 py-2 md:py-4">
+            <div class="overflow-hidden w-full">
+                <div class="tech-scroll-container">
+                    <div class="tech-scroll-content">
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">HTML</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">CSS</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">BOOTSTRAP</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">ELEMENTOR + WORDPRESS</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">JAVASCRIPT</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">LARAVEL PHP</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">SQL</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">LINUX &nbsp  </span>
                     </div>
-                    <div class="tech-scroll-content flex space-x-8 md:space-x-12 px-8">
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">HTML</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">CSS</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">BOOTSTRAP</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">ELEMENTOR + WORDPRESS</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">JAVASCRIPT</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">LARAVEL PHP</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">SQL</span>
-                        <span class="text-lg md:text-xl text-gray-500 hover:text-white transition-colors duration-300">LINUX</span>
+                    <div class="tech-scroll-content">
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300"> HTML</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">CSS</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">BOOTSTRAP</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">ELEMENTOR + WORDPRESS</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">JAVASCRIPT</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">LARAVEL PHP</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">SQL</span>
+                        <span class="text-sm md:text-xl text-gray-500 hover:text-white transition-colors duration-300">LINUX</span>
                     </div>
                 </div>
             </div>
